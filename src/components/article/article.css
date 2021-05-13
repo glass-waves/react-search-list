@@ -1,0 +1,19 @@
+li {
+    border: solid black 1px;
+    text-align: center;
+    padding: 30px;
+    width: 25%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+li img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
