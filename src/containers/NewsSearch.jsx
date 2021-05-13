@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { getNewsArticles } from '../services/getNewsArticles';
 import Search from '../components/search/Search';
 import ArticleList from '../components/articleList/ArticleList';
@@ -7,12 +7,12 @@ import ArticleList from '../components/articleList/ArticleList';
 export default class NewsSearch extends Component {
     state = {
         articles: [],
-        search: '',
+        search: 'Biden',
         loading: true,
     };
-    static propTypes = {
-        prop: PropTypes,
-    };
+    // static propTypes = {
+    //     prop: PropTypes,
+    // };
     async componentDidMount() {
         const articles = await getNewsArticles(this.state.search);
         this.setState({
