@@ -2,7 +2,7 @@
 export const getNewsArticles = async (keyword) => {
     const res = await fetch(
         // eslint-disable-next-line max-len
-        `https://newsapi.org/v2/everything?q=${keyword}&apiKey=${process.env.NEWS_API_KEY}`
+        `https://newsapi.org/v2/everything?q=${keyword}&apiKey=${process.env.NEWS_API_KEY}&pageSize=5`
     );
     
     const { articles } =  await res.json();

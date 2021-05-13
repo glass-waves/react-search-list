@@ -5,7 +5,8 @@ const Search = ({ value, onChange, onSubmit }) => {
     return (
         <div>
             <form onSubmit={onSubmit}>
-                <input type="text" value={value} onChange={onChange}/>
+                <label htmlFor="search-input">Search Articles</label>
+                <input type="text" id="search-input" value={value} onChange={onChange}/>
                 <button>Search</button>
             </form>
         </div>
